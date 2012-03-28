@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "dtds/log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+
+  <appender name="consola" class="org.apache.log4j.ConsoleAppender">	
+  	<param name="Threshold" value="DEBUG"/>	
+	<layout class="org.apache.log4j.PatternLayout">
+	   <param name="ConversionPattern" value="%d{ABSOLUTE} %-5p [%c{1}] %m%n"/>
+	</layout>
+	</appender> 
+	
+	
+  	<appender name="fichgeneral" class="org.apache.log4j.DailyRollingFileAppender">     
+          <param name="File" value="C:/Users/Pakonat/workspaceJ2EE/alopecRPGws/log/general.log"/>
+          <param name="DatePattern" value="'.'yyyy-MM-dd"/>
+          <param name="append" value="true"/>
+          <param name="Threshold" value="INFO"/>
+          <layout class="org.apache.log4j.PatternLayout">
+               <param name="ConversionPattern"
+	              value="[Time: %d] [Thread: %t] [Level: %p] %c - %m%n" />
+          </layout>
+    </appender>
+
+  
+    <category name="java.sql.PreparedStatement">
+    	<priority value="info" />
+    </category>
+    <category name="java.sql.Connection">
+    	<priority value="info" />
+    </category>
+    <category name="java.sql.Statement">
+    	<priority value="info" />
+    </category>
+
+    <category name="com.alopec">
+    	<priority value="debug" />
+    </category>
+        
+
+ 
+	<root>
+		<level value="info"/>
+		<appender-ref ref="consola"/>
+		<appender-ref ref="fichgeneral"/>
+	</root>
+
+</log4j:configuration>
