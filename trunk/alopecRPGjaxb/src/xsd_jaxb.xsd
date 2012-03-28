@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	
+	
+	<xs:element name="map_data">	
+		<xs:complexType >
+			<xs:sequence>
+				<xs:element type="mobile" name="mobiles" minOccurs="0"
+					maxOccurs="unbounded" />
+				<xs:element type="players" name="players" />
+			</xs:sequence>	
+		</xs:complexType>
+	</xs:element>
+	
+		
+	<xs:complexType name="players">
+		<xs:sequence>
+			<xs:element type="player" name="player" minOccurs="0"
+							maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+	<xs:complexType name="mobile">
+		<xs:sequence>
+			<xs:element ref="posX" minOccurs="1" maxOccurs="1"/>
+			<xs:element ref="posY" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="player">
+		<xs:sequence>
+			<xs:element ref="life" minOccurs="1" maxOccurs="1"/>
+			<xs:element ref="name" minOccurs="1" maxOccurs="1"/>
+			<xs:element ref="posX" minOccurs="1" maxOccurs="1"/>
+			<xs:element ref="posY" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="life">
+		<xs:simpleType>
+			 <xs:restriction base="xs:int">
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="posX">
+		<xs:simpleType>
+			 <xs:restriction base="xs:int">
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+		<xs:element name="posY">
+		<xs:simpleType>
+			 <xs:restriction base="xs:int">
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="name">
+		<xs:simpleType>
+			 <xs:restriction base="xs:string">
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	
+</xs:schema>
