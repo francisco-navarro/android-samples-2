@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMapConfig
+    PUBLIC "-//iBATIS.com//DTD SQL Map Config 2.0//EN"
+    "http://www.ibatis.com/dtd/sql-map-config-2.dtd">
+
+<sqlMapConfig>
+  <settings cacheModelsEnabled="true" 
+  			enhancementEnabled="true" 
+  			lazyLoadingEnabled="true" 
+  			errorTracingEnabled="true" 
+  			maxRequests="32"   
+  			maxSessions="10"    
+  			maxTransactions="5"    
+  			useStatementNamespaces="true" 
+  />
+
+ <transactionManager type="JDBC" >
+   <dataSource type="SIMPLE">
+<property name="JDBC.Driver" value="oracle.jdbc.driver.OracleDriver"/>
+    <property name="JDBC.ConnectionURL" value="jdbc:oracle:thin:@localhost:1521:XE"/>
+			<property name="JDBC.Username" value="alopec_rpg" />
+			<property name="JDBC.Password" value="alopec_rpg" />
+	
+   </dataSource>
+ </transactionManager>
+	
+
+	<sqlMap resource="../bbdd/users.xml"/>
+</sqlMapConfig>

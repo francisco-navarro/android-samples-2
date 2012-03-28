@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://impl.ws.rpg.alopec.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://impl.ws.rpg.alopec.com" xmlns:intf="http://impl.ws.rpg.alopec.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://impl.ws.rpg.alopec.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="doLogin">
+    <complexType>
+     <sequence>
+      <element name="user" type="xsd:string"/>
+      <element name="pass" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="doLoginResponse">
+    <complexType>
+     <sequence>
+      <element name="doLoginReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="doLogout">
+    <complexType/>
+   </element>
+   <element name="doLogoutResponse">
+    <complexType>
+     <sequence>
+      <element name="doLogoutReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="doLogoutResponse">
+
+      <wsdl:part element="impl:doLogoutResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="doLoginRequest">
+
+      <wsdl:part element="impl:doLogin" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="doLoginResponse">
+
+      <wsdl:part element="impl:doLoginResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="doLogoutRequest">
+
+      <wsdl:part element="impl:doLogout" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="Login">
+
+      <wsdl:operation name="doLogin">
+
+         <wsdl:input message="impl:doLoginRequest" name="doLoginRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:doLoginResponse" name="doLoginResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="doLogout">
+
+         <wsdl:input message="impl:doLogoutRequest" name="doLogoutRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:doLogoutResponse" name="doLogoutResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="LoginSoapBinding" type="impl:Login">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="doLogin">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="doLoginRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="doLoginResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="doLogout">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="doLogoutRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="doLogoutResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="LoginService">
+
+      <wsdl:port binding="impl:LoginSoapBinding" name="Login">
+
+         <wsdlsoap:address location="http://tempuri.org/alopecRPGws/services/Login"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

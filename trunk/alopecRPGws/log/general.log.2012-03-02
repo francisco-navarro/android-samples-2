@@ -1,0 +1,44 @@
+[Time: 2012-03-02 00:01:16,875] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Ejecutando Login
+[Time: 2012-03-02 00:01:16,885] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Logeando [user]
+[Time: 2012-03-02 00:04:09,008] [Thread: main] [Level: INFO] com.alopec.rpg.ws.servlet.WorldServlet - Arrancando servidor...
+[Time: 2012-03-02 00:04:09,012] [Thread: main] [Level: INFO] com.alopec.rpg.ws.servlet.WorldServlet - Arrancando servidor UDP en puerto 9879
+[Time: 2012-03-02 00:04:09,024] [Thread: main] [Level: INFO] com.alopec.rpg.ws.servlet.WorldServlet - Servidor arrancado.
+[Time: 2012-03-02 00:04:09,254] [Thread: main] [Level: WARN] org.apache.axis.utils.JavaUtils - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+[Time: 2012-03-02 00:04:20,499] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Ejecutando Login
+[Time: 2012-03-02 00:04:20,499] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Logeando [user]
+[Time: 2012-03-02 00:04:25,738] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Ejecutando Login
+[Time: 2012-03-02 00:04:25,739] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Logeando [user]
+[Time: 2012-03-02 00:09:01,106] [Thread: main] [Level: INFO] com.alopec.rpg.ws.servlet.WorldServlet - Arrancando servidor...
+[Time: 2012-03-02 00:09:01,109] [Thread: main] [Level: INFO] com.alopec.rpg.ws.servlet.WorldServlet - Arrancando servidor UDP en puerto 9879
+[Time: 2012-03-02 00:09:01,122] [Thread: main] [Level: INFO] com.alopec.rpg.ws.servlet.WorldServlet - Servidor arrancado.
+[Time: 2012-03-02 00:09:01,330] [Thread: main] [Level: WARN] org.apache.axis.utils.JavaUtils - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+[Time: 2012-03-02 00:09:08,255] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Ejecutando Login
+[Time: 2012-03-02 00:09:08,256] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Logeando [user]
+[Time: 2012-03-02 00:09:17,775] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Ejecutando Login
+[Time: 2012-03-02 00:09:17,775] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Logeando [user]
+[Time: 2012-03-02 00:10:08,275] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Ejecutando Login
+[Time: 2012-03-02 00:10:08,275] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Logeando [user]
+[Time: 2012-03-02 00:12:46,606] [Thread: main] [Level: INFO] com.alopec.rpg.ws.servlet.WorldServlet - Arrancando servidor...
+[Time: 2012-03-02 00:12:46,610] [Thread: main] [Level: INFO] com.alopec.rpg.ws.servlet.WorldServlet - Arrancando servidor UDP en puerto 9879
+[Time: 2012-03-02 00:12:46,621] [Thread: main] [Level: INFO] com.alopec.rpg.ws.servlet.WorldServlet - Servidor arrancado.
+[Time: 2012-03-02 00:12:46,825] [Thread: main] [Level: WARN] org.apache.axis.utils.JavaUtils - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+[Time: 2012-03-02 00:13:08,507] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Ejecutando GetStatusAt
+[Time: 2012-03-02 00:13:08,507] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Ejecutando GetStatusAt 1,2
+[Time: 2012-03-02 00:13:16,680] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Ejecutando GetStatusAt
+[Time: 2012-03-02 00:13:16,680] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Ejecutando GetStatusAt 1,2
+[Time: 2012-03-02 00:14:08,749] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Ejecutando GetStatusAt
+[Time: 2012-03-02 00:14:08,749] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Ejecutando GetStatusAt 1,2
+[Time: 2012-03-02 00:14:47,872] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Ejecutando Login
+[Time: 2012-03-02 00:14:47,873] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Logeando [1]
+[Time: 2012-03-02 00:16:47,120] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Ejecutando Login
+[Time: 2012-03-02 00:16:47,120] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Logeando [1]
+[Time: 2012-03-02 00:17:11,041] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Ejecutando Login
+[Time: 2012-03-02 00:17:11,041] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Logeando [1]
+[Time: 2012-03-02 00:17:30,590] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Ejecutando GetStatusAt
+[Time: 2012-03-02 00:17:30,590] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Ejecutando GetStatusAt 1,2
+[Time: 2012-03-02 00:18:34,974] [Thread: main] [Level: INFO] com.alopec.rpg.ws.servlet.WorldServlet - Arrancando servidor...
+[Time: 2012-03-02 00:18:34,977] [Thread: main] [Level: INFO] com.alopec.rpg.ws.servlet.WorldServlet - Arrancando servidor UDP en puerto 9879
+[Time: 2012-03-02 00:18:34,987] [Thread: main] [Level: INFO] com.alopec.rpg.ws.servlet.WorldServlet - Servidor arrancado.
+[Time: 2012-03-02 00:18:35,189] [Thread: main] [Level: WARN] org.apache.axis.utils.JavaUtils - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+[Time: 2012-03-02 00:18:40,137] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Ejecutando GetStatusAt
+[Time: 2012-03-02 00:18:40,137] [Thread: Thread-1] [Level: INFO] com.alopec.rpg.world.engine.util.BaseAction - Ejecutando GetStatusAt 1,2
