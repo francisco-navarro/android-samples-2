@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project basedir="." default="compila" name="AirFreight_JAXB">
+
+	<property name="dir.src" value="src" />
+	<property name="dir.classes" value="bin${file.separator}" />
+	<property name="dir.destino" value=".${file.separator}jars_generated" />
+	<property name="app.name" value="alopecRPG_jaxb" />
+	<property name="app.version" value="1.0" />
+	<property name="fichero.jar" value="${app.name}-${app.version}.jar" />
+
+	<target name="clean">
+		<delete dir="${dir.classes}" />
+		<delete dir="${dir.destino}${file.separator}${fichero.jar}" />
+		<mkdir dir="${dir.classes}" />
+		<mkdir dir="${dir.destino}" />
+	</target>
+
+	<target name="compila" depends="clean">
+		
+		
+		
+		<javac debug="on" deprecation="on" destdir="${dir.classes}"
+			optimize="on" srcdir="${dir.src}">
+		</javac>
+
+		<jar basedir="${dir.classes}"
+			jarfile="${dir.destino}${file.separator}${fichero.jar}" />
+	</target>
+</project>
