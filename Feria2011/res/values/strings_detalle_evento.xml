@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="detalle_evento.ColorFondoApp">#FFFFFF</color>
+    <color name="detalle_evento.ColorFuente">#000000</color>
+    <string name="detalle_evento.botonMapa">    Mapa    </string>
+    <string name="detalle_evento.botonRecordar">  Recordar On </string>
+    <string name="detalle_evento.botonRecordarOff">  Recordar Off  </string>
+    <string name="detalle_evento.botonCalendar">Compartir</string>
+    
+    <string name="detalle_evento.evento.alarma.guardado">El aviso ha sido guardado.</string> 
+    <string name="detalle_evento.evento.alarma.eliminado">El aviso ha sido borrado.</string> 
+    <string name="detalle_evento.evento.alarma.outatime">No se pueden establecer avisos de eventos pasados.</string> 
+    
+     <string name="detalle_evento.guardado.google.calendar">El evento se ha guardado en Google Calendar.</string>
+     <string name="detalle_evento.compartir">Compartir Evento...</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/HorariosLayout"
+	android:background="@drawable/eventos_fondo">
+	<LinearLayout android:layout_height="wrap_content"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:id="@+id/barra_horarios" android:paddingTop="17dp">
+
+		<Button style="@style/EventoButton" android:background="@drawable/btn_eventos_atras"
+			android:id="@+id/left_horarios" android:onClick="botonAtras" />
+		<Spinner android:id="@+id/spinner" android:layout_height="wrap_content"
+			android:background="@drawable/spinner_fechas" android:layout_width="wrap_content"
+			android:layout_weight=".7" android:textSize="20dp"
+			android:gravity="center_horizontal|center_vertical"
+
+			android:textColor="@color/texto_oscuro" android:paddingTop="5dp"
+			android:prompt="@string/spinner" />
+
+		<Button style="@style/EventoButton" android:background="@drawable/btn_eventos_siguiente"
+			android:id="@+id/right_horarios" android:onClick="botonSiguiente" />
+	</LinearLayout>
+
+	<LinearLayout android:layout_height="fill_parent"
+		android:orientation="vertical" android:layout_width="fill_parent">
+		<ListView android:id="@android:id/list" android:layout_width="fill_parent"
+			android:layout_weight="1" android:layout_height="fill_parent"
+			android:padding="5dp" android:cacheColorHint="#00000000">
+		</ListView>
+		
+		<TextView android:id="@id/android:empty" android:background="@null"
+		android:text="NO SE ENCUENTRAN EVENTOS"
+		android:layout_height="fill_parent" android:layout_width="fill_parent" />
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:layout_gravity="bottom|center">
+			<Button android:id="@+id/filtro" android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:layout_weight="0.5"
+				android:text="Categoría" android:onClick="filtrar" />
+			<Button android:id="@+id/buscar" android:layout_weight="0.5"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:text="Buscar" 
+				android:onClick="buscar" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
+

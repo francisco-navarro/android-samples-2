@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MenuPrincipal!</string>
+    <string name="app_name">Feria 2011</string>
+    <color name="Azul_oscuro">#0000FF</color>
+    <string name="detalle_evento_recordar">Recordar</string>
+	<string name="spinner">Seleccionar día</string>
+	<string name="spinner2">Seleccionar página</string>
+	<string name="search_label">Search</string>
+</resources>

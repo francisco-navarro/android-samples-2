@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/HorariosLayout"
+	android:background="@drawable/eventos_fondo">
+
+	<LinearLayout android:layout_height="fill_parent"
+		android:orientation="vertical" android:layout_width="fill_parent">
+		<TextView android:id="@+id/titulo" android:background="@null"
+			android:text="Resultados:" android:layout_height="wrap_content"
+			android:textSize="28dp" android:paddingBottom="10dp"
+			android:paddingTop="5dp" android:paddingLeft="5dp"
+			android:layout_width="fill_parent" />
+
+		<ListView android:id="@android:id/list" android:layout_width="fill_parent"
+			android:layout_weight="1" android:layout_height="fill_parent"
+			android:padding="5dp" android:cacheColorHint="#00000000">
+		</ListView>
+
+		<TextView android:id="@id/android:empty" android:background="@null"
+			android:text="NO SE HAN ENCONTRADO EVENTOS" android:layout_height="fill_parent"
+			android:layout_width="fill_parent" />
+
+	</LinearLayout>
+
+</LinearLayout>

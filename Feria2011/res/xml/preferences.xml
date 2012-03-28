@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory 
+        android:title="Recordatorios"
+        android:key="alarmas">
+
+        <ListPreference 
+            android:key="Tiempo"
+            android:title="Tiempo de Recordatorio"
+            android:summary="Seleccione con cuanta antelación desea que se le recuerden los eventos seleccionados"
+            android:defaultValue="300000" 
+            android:entries="@array/alarmInterval"
+            android:entryValues="@array/alarmIntervalValues"
+        />    
+        
+        <CheckBoxPreference 
+            android:key="Notificacion"
+            android:summary="Mostrar notificación como recordatorio"
+            android:defaultValue="true" 
+            android:title="Notificaciones" 
+        />
+        
+        <CheckBoxPreference 
+            android:key="Vibracion"
+            android:summary="Vibrar durante recordatorio"
+            android:defaultValue="true" 
+            android:title="Vibración" 
+        />
+            
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="Noticias"
+        android:key="noticias">
+        <ListPreference 
+            android:key="Noticias"
+            android:title="Noticias por página"
+            android:summary="Seleccione el número de noticias que desea ver por página"
+            android:defaultValue="10" 
+            android:entries="@array/NoticiasPaginas"
+            android:entryValues="@array/NoticiasPaginasValues"
+        />   
+    </PreferenceCategory>
+    
+    
+</PreferenceScreen>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/mainlayout"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+	<com.google.android.maps.MapView
+		android:id="@+id/vistaDeMapa" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:enabled="true"
+		android:clickable="true" android:apiKey="0GlKg_0cjY3qCozfRa7ja3iqJqgroG1kKDtf0gg"
+		android:textSize="20dp" />
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@null"
+		android:baselineAligned="true" android:gravity="bottom"
+		android:layout_gravity="bottom">
+		<ZoomControls android:id="@+id/zoomcontrols"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="top|center" />
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="@null"
+			android:baselineAligned="true" android:gravity="bottom">
+			<Button android:id="@+id/button1" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_weight="0.5"
+				android:text="@string/mapa_boton1" android:onClick="clickTipos"></Button>
+
+			<Button android:id="@+id/button2" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_weight="0.5"
+				android:text="@string/mapa_boton2" android:onClick="clickBuses"></Button>
+		</LinearLayout>
+
+	</LinearLayout>
+	<Button android:id="@+id/locButton" style="@style/MediaButton"
+		android:drawableTop="@drawable/map_button_location"
+		android:layout_width="wrap_content" android:paddingTop="10dp" android:paddingLeft="10dp"
+		android:layout_height="wrap_content" android:onClick="centerMap" />
+	<Button android:id="@+id/mapButton" style="@style/MediaButton"
+		android:drawableTop="@drawable/map_button_mode" android:layout_width="wrap_content"
+		android:paddingTop="10dp" android:paddingRight="10dp" android:layout_height="wrap_content"
+		android:onClick="MapMode" android:layout_gravity="right" />
+
+</FrameLayout>
