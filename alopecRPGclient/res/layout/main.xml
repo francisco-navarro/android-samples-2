@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout android:id="@+id/linearLayout4" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center">
+        <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imageView1" android:src="@drawable/cabecera"></ImageView>    	
+    </LinearLayout>
+   
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingRight="20dip">
+        <TextView android:text="@string/user" android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_width="150dip" android:gravity="right" android:textSize="20dip"></TextView>
+        <EditText android:layout_height="wrap_content" android:text="pako" android:layout_width="match_parent" android:id="@+id/TextUser" android:paddingRight="20dip"></EditText>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout3" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingRight="20dip">
+    	 <TextView android:id="@+id/textView1" android:layout_height="wrap_content" android:text="@string/password" android:layout_width="150dip" android:gravity="right" android:textSize="20dip"></TextView>
+        <EditText android:layout_height="wrap_content" android:text="p" android:layout_width="match_parent" android:id="@+id/TextPass"></EditText>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center">
+        <Button android:layout_height="wrap_content" android:onClick="doClick" android:text="Do Login" android:id="@+id/button1" android:layout_width="150dip" ></Button>
+    </LinearLayout>
+     <LinearLayout android:id="@+id/linearLayout5" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center">
+         <ProgressBar android:id="@+id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="invisible"></ProgressBar>
+         <TextView android:text="" android:id="@+id/textError" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+     	
+    </LinearLayout>
+   
+</LinearLayout>
