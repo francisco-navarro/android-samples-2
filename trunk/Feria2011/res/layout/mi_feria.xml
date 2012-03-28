@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@drawable/eventos_fondo">
+
+	<TextView android:id="@+id/titulo" android:background="@null"
+		android:text="Recordatorios:" android:layout_height="wrap_content"
+		android:textSize="28dp" android:paddingBottom="10dp"
+		android:paddingTop="5dp" android:paddingLeft="5dp"
+		android:layout_width="fill_parent" />
+
+	<ListView android:id="@android:id/list" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:padding="5dp"
+		android:cacheColorHint="#00000000">
+	</ListView>
+	<TextView android:id="@id/android:empty" android:background="@null"
+		android:text="NO SE HA ESTABLECIDO NINGÚN RECORDATORIO"
+		android:layout_height="fill_parent" android:layout_width="fill_parent" />
+</LinearLayout>

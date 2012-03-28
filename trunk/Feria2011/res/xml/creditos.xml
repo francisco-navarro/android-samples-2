@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Desarrollo"
+		android:key="desarrollo">
+		<PreferenceScreen android:key="misanmen"
+			android:title="Miguel S. Mendoza" android:summary="Ingeniero Técnico Informático">
+		</PreferenceScreen>
+		<PreferenceScreen android:key="pacona"
+			android:title="Fco. José Navarro Laín" android:summary="Técnico Informático">
+		</PreferenceScreen>
+
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="Diseño Gráfico"
+		android:key="diseño_grafico">
+		<PreferenceScreen android:key="antonio"
+			android:title="Antonio Castillo Jiménez" android:summary="Diplomado en Diseño Gráfico">
+		</PreferenceScreen>
+
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="Gestión"
+		android:key="gestion">
+		<PreferenceScreen android:key="marc" android:title="Marc Vidal González"
+			android:summary="Ingeniero Técnico Industrial">
+		</PreferenceScreen>
+
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="Colaboradores"
+		android:key="colaboradores">
+		<PreferenceScreen android:title="Alberto Vecina Sánchez"
+			android:key="alberto" android:summary="Técnico Informático">
+		</PreferenceScreen>
+		<PreferenceScreen android:key="villena"
+			android:summary="Ingeniero Técnico Industrial" android:title="Miguel Ángel Villena Rodriguez">
+		</PreferenceScreen>
+		<PreferenceScreen android:title="Marisa Román Muela"
+			android:key="marisa" android:summary="Licenciada en Derecho">
+		</PreferenceScreen>
+		<PreferenceScreen android:title="Encarnación Jiménez Martínez"
+			android:key="encar" android:summary="Ingeniero Técnico Industrial">
+		</PreferenceScreen>
+		<PreferenceScreen android:key="josete"
+			android:summary="Ingeniero Informático" android:title="José Herminio Parreño Piqueras">
+		</PreferenceScreen>
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="Agradecimientos"
+		android:key="agradecimientos">
+		<PreferenceScreen android:key="edii"
+			android:title="Escuela de Ingenieros Industriales">
+		</PreferenceScreen>
+		<PreferenceScreen android:key="concejal" android:title="Manuel Serrano"
+			android:summary="Concejal de Feria del Ayto. Albacete">
+		</PreferenceScreen>
+		<PreferenceScreen android:key="hortelano"
+			android:title="Jose Luis Hortelano">
+		</PreferenceScreen>
+		<PreferenceScreen android:key="paco" android:title="Francisco Barroso"
+			android:summary="Calidad Interna Ayto. Albacete">
+		</PreferenceScreen>
+
+
+	</PreferenceCategory>
+
+
+</PreferenceScreen>

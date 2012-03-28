@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/detalle_background">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/linearLayout2"
+		android:gravity="bottom|center_horizontal" android:paddingBottom="5dp"
+		android:paddingTop="20dp">
+
+		<TextView android:text="TITULO" android:id="@+id/noticia.titulo"
+			android:layout_width="wrap_content" android:layout_height="fill_parent"
+			android:textColor="@color/detalle_evento.ColorFuente"
+			android:textSize="32dip" android:textStyle="bold" android:gravity="bottom"
+			android:layout_gravity="bottom" android:paddingBottom="5dp"
+			android:paddingLeft="7dp" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/linearLayout1">
+		<TextView android:text="Subtitulo" android:id="@+id/noticia.subtitulo"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textColor="@color/detalle_evento.ColorFuente"
+			android:textSize="20dip" android:textStyle="italic" style="@style/Detalles" />
+	</LinearLayout>
+	<ImageView android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:paddingTop="18dp"
+		android:src="@drawable/detalle_day" android:id="@+id/noticia.imagen"
+		android:layout_gravity="center"></ImageView>
+
+	<TextView android:text="DESCRIPCION" android:id="@+id/noticia.cuerpo"
+		android:paddingTop="10dip" android:layout_weight=".9"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:textColor="@color/detalle_evento.ColorFuente" style="@style/Detalles"
+		android:scrollbars="vertical"></TextView>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:id="@+id/layoutBotones" android:layout_height="wrap_content"
+		android:layout_gravity="bottom" android:gravity="bottom">
+		<LinearLayout android:layout_width="fill_parent"
+			android:id="@+id/layoutBotones" android:layout_gravity="bottom"
+			android:gravity="bottom|right" android:layout_height="wrap_content"
+			android:paddingBottom="15dp">
+			<Button android:text="@string/detalle_evento.botonCalendar"
+				android:id="@+id/detalle_botonCalendar" style="@style/DetalleButton1"
+				android:onClick="insertarCalendar" android:background="@drawable/btn_detalle_share" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

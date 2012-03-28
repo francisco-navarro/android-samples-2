@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/detalle_background">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/linearLayout2"
+		android:gravity="bottom|center_horizontal" android:paddingBottom="5dp" android:paddingTop="20dp">
+		<TextView android:layout_width="87dip" android:background="@drawable/detalle_day"
+			android:layout_height="90dip" android:id="@+id/imageIconoCalendar"
+			android:text="15" android:paddingTop="18dp"
+			android:gravity="center_vertical|center_horizontal" android:textSize="36dip"
+			android:textStyle="bold" android:textColor="@color/detalle_evento.ColorFuente"
+			android:layout_gravity="bottom" />
+
+		<TextView android:text="HORA - HORA" android:id="@+id/detalle.textHora"
+			android:layout_width="wrap_content" android:layout_height="fill_parent"
+			android:textColor="@color/detalle_evento.ColorFuente"
+			android:textSize="32dip" android:textStyle="bold" android:gravity="bottom"
+			android:layout_gravity="bottom" android:paddingBottom="5dp" android:paddingLeft="7dp"/>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/linearLayout1">
+		<TextView android:text="TITULO" android:id="@+id/detalle.textTitulo"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textColor="@color/detalle_evento.ColorFuente"
+			android:textSize="20dip" android:textStyle="bold" style="@style/Detalles" />
+	</LinearLayout>
+
+	<TextView android:text="DESCRIPCION" android:id="@+id/detalle.textDesc1"
+		android:paddingTop="10dip" android:layout_weight=".9"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:textColor="@color/detalle_evento.ColorFuente" style="@style/Detalles"
+		android:scrollbars="vertical"></TextView>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:id="@+id/layoutBotones" android:layout_height="wrap_content"
+		android:layout_gravity="bottom" android:gravity="bottom">
+		<LinearLayout android:layout_width="fill_parent"
+			android:id="@+id/layoutBotones" android:layout_gravity="bottom"
+			android:gravity="bottom" android:layout_height="wrap_content"
+			android:paddingBottom="15dp">
+			<Button android:text="@string/detalle_evento.botonMapa" style="@style/DetalleButton1"
+				android:id="@+id/detalle_botonMapa" android:background="@drawable/btn_detalle_map"
+				android:onClick="verEnMapa"></Button>
+			<Button android:background="@drawable/btn_detalle_alarm_on"
+				android:text="@string/detalle_evento_recordar" style="@style/DetalleButton2"
+				android:id="@+id/detalle_evento_botonRecordar" android:onClick="crearAlarma"></Button>
+			<Button android:text="@string/detalle_evento.botonCalendar"
+				android:id="@+id/detalle_botonCalendar" style="@style/DetalleButton1"
+				android:onClick="insertarCalendar" android:background="@drawable/btn_detalle_share" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
